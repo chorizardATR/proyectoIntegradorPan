@@ -27,7 +27,7 @@ origins = [
     "http://127.0.0.1:4321",
     # URLs de Railway (producción)
     "https://proyectointegradorpan-production-88c6.up.railway.app",  # FrontendAdmin
-    # "https://tu-frontend-client.up.railway.app",  # FrontendClient (agregar después)
+    "https://proyectointegradorpan-production-dca3.up.railway.app",  # FrontendClient
 ]
 
 # Si DEBUG está activo, permite todos los orígenes
