@@ -1,0 +1,41 @@
+## BACKEND
+comenzamos desde:
+
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/Proyecto Integrador Agencia Inmobiliaria/PRESENTAR OFICIAL/v6_muchasCosasXD/ProyectoInt
+
+cd "Backend"
+source .venv/Scripts/activate
+## PARA EL DOCS
+python -m uvicorn app.main:app --reload --host localhost --port 8000
+## PARA TODAS
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000 
+link-para-docs: http://localhost:8000/docs
+
+user-para-authorize: nico
+password-para-authorize: 12345678
+
+## FRONTEND ADMINISTRADOR
+
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/Proyecto Integrador Agencia Inmobiliaria/PRESENTAR OFICIAL/v6_muchasCosasXD/ProyectoInt
+
+cd "Frontend/FrontendAdmin"
+npm run dev
+
+link-para-acceder: http://localhost:5173/
+
+user-para-login: adrian
+password-para-login: 12345678
+
+## FRONTEND CLIENTE (Público)
+
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/Proyecto Integrador Agencia Inmobiliaria/PRESENTAR OFICIAL/v6_muchasCosasXD/ProyectoInt
+
+cd "Frontend/FrontendClient"
+npm run dev
+
+link-para-acceder: http://localhost:4321/
+
+## FRONTEND ASESOR
+
+cd "Frontend/FrontendAsesor"
+npm start

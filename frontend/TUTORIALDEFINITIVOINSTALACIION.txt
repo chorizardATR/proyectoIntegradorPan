@@ -1,0 +1,84 @@
+--------------------------------------------------------------------------------
+BACKEND
+--------------------------------------------------------------------------------
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt (dev)
+$ cd backend
+
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt/backend (dev)
+$ py -3.13 -m venv .venv
+
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt/backend (dev)
+$ source .venv/Scripts/activate
+
+(.venv) 
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt/backend (dev)
+$ python -m pip install -r requirements.txt
+
+## PARA EL DOCS
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt/backend (dev)
+$ python -m uvicorn app.main:app --reload --host localhost --port 8000
+
+## PARA TODAS
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt/backend (dev)
+$ python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000 
+
+link-para-docs: http://localhost:8000/docs
+--------------------------------------------------------------------------------
+FRONTEND ADMINISTRADOR
+--------------------------------------------------------------------------------
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt (dev)
+$ cd "Frontend/FrontendAdmin"
+
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt/Frontend/FrontendAdmin (dev)
+$ npm install
+
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt/Frontend/FrontendAdmin (dev)
+$ npm run dev
+
+> frontendadmin@0.0.0 dev
+> vite
+
+18:35:12 [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v7.1.10  ready in 449 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+--------------------------------------------------------------------------------
+FRONTEND WEB PUBLICA
+--------------------------------------------------------------------------------
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt (dev)
+$ cd "Frontend/FrontendClient"
+
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt/Frontend/FrontendClient (dev)
+$ npm install
+
+added 70 packages, and audited 379 packages in 1s
+
+174 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Presi@LAPTOP-NAM911L1 MINGW64 ~/Desktop/UNIVALLE/ProyectoInt/Frontend/FrontendClient (dev)
+$ npm run dev
+
+> frontend-cliente@0.0.1 dev
+> astro dev
+
+18:36:46 [@astrojs/node] Enabling sessions with filesystem storage
+18:36:46 [types] Generated 1ms
+18:36:46 [content] Syncing content
+18:36:46 [content] Astro config changed
+18:36:46 [content] Clearing content store
+18:36:46 [content] Synced content
+18:36:46 [vite] Re-optimizing dependencies because vite config has changed
+
+ astro  v5.16.4 ready in 144 ms
+
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+--------------------------------------------------------------------------------
+FRONTEND ASESOR
+--------------------------------------------------------------------------------
