@@ -19,9 +19,24 @@ app = FastAPI(
 )
 
 # Configurar CORS
+# En desarrollo permite todo (*), en producción especifica los dominios de Railway
+origins = [
+    "http://localhost:3000",  # Admin local
+    "http://localhost:4321",  # Cliente local
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:4321",
+    # Agregar las URLs de Railway después del despliegue:
+    # "https://tu-frontend-admin.up.railway.app",
+    # "https://tu-frontend-client.up.railway.app",
+]
+
+# Si DEBUG está activo, permite todos los orígenes
+if settings.DEBUG:
+    origins = ["*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # En producción, especificar los orígenes permitidos
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
