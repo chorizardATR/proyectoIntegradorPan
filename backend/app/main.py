@@ -25,9 +25,9 @@ origins = [
     "http://localhost:4321",  # Cliente local
     "http://127.0.0.1:3000",
     "http://127.0.0.1:4321",
-    # Agregar las URLs de Railway después del despliegue:
-    # "https://tu-frontend-admin.up.railway.app",
-    # "https://tu-frontend-client.up.railway.app",
+    # URLs de Railway (producción)
+    "https://proyectointegradorpan-production-88c6.up.railway.app",  # FrontendAdmin
+    # "https://tu-frontend-client.up.railway.app",  # FrontendClient (agregar después)
 ]
 
 # Si DEBUG está activo, permite todos los orígenes
